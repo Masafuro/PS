@@ -8,7 +8,7 @@
 
 プログラムは役割に応じて以下の`src/`フォルダ直下に4つに分割して配置され、システムによって管理されます。
 
-> python main/suquencer.py
+> python main/sequencer.py
 
 を実行することで以下の内容が処理されます。`Ctrl+C`等による終了を行うとkeepを停止しteardwon実行後、停止します。
 
