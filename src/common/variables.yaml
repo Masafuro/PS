@@ -1,4 +1,15 @@
 loop:
   counter: 0
+
 keep:
   status: "Standby"
+
+master:
+  max_speed: 1500
+  server_url: "http://localhost:8080"
+  timeout_ms: 5000
+
+system:
+  version: "1.0.0"
+  vendor: "Custom Factory Solution"
+  model_id: "SEQ-001"
