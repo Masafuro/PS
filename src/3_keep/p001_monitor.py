@@ -1,11 +1,14 @@
 import time
-from variables import master_var
+from variables import keep_var as v
 
 def execute():
-    # 3秒おきに server_connected を True と False で切り替える
-    status = False
     while True:
-        status = not status
-        master_var.keep.server_connected = status
-        print(f"  [Keep Process] Set master to: {status}")
         time.sleep(0.5)
+        
+        # 1. 自分の領域を正しく更新します
+        v.keep.status = "ACTIVE" if v.keep.status != "ACTIVE" else "IDLE"
+        
+        # 2. 相手の領域をわざと書き換えます（Loopのコミットによって上書きされるはずです）
+        v.loop.counter = -999
+        
+        print(f"  [Keep] Update: keep.status={v.keep.status}, Try hack loop.counter=-999")

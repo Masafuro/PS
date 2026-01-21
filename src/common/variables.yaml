@@ -1,13 +1,4 @@
-# src/common/variables.yaml
-
-# Loop側がオーナーの変数
 loop:
-  cycle_count: 0
-  system_status: "Standby"
-  target_temp: 25.0
-
-# Keep側がオーナーの変数
+  counter: 0
 keep:
-  server_connected: false
-  current_temp: 0.0
-  error_code: 0
+  status: "Standby"
