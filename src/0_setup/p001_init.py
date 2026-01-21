@@ -1,7 +1,15 @@
-import common.variables as var
+from variables import master_var as v
 
 def execute():
-    # システムに名前を付け、初期化完了フラグを立てる
-    var.system_name = "Python-PLC-v1"
-    var.is_initialized = True
-    print(f"Setup Complete: {var.system_name}")
+    # システムの初期状態をマスター変数に直接書き込みます
+    print("Setup: システム変数を初期化しています...")
+    
+    v.loop.cycle_count = 0
+    v.loop.system_status = "Initializing"
+    
+    # 本来はここでハードウェアのチェックや通信の確立確認などを行います
+    v.keep.server_connected = False
+    v.keep.error_code = 0
+    
+    v.loop.system_status = "Running"
+    print(f"Setup: 準備が完了しました。ステータス: {v.loop.system_status}")
