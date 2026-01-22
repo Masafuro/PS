@@ -57,5 +57,5 @@
 
 具体的な実装方法や、書き換えがどのようにブロックされるかのコード例については、以下のドキュメントを参照してください。
 
-* [実装サンプル集 (README_SAMPLECODE.md)](https://www.google.com/search?q=./README_SAMPLECODE.md)
+* [実装サンプル集 (README_SAMPLECODE.md)](./README_SAMPLECODE.md)
 

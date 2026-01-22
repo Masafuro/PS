@@ -29,13 +29,13 @@
 
 変数の「所有権」や「隔離メカニズム」、および各フェーズの権限マトリクスについて詳しく解説しています。
 
-* [変数仕様詳細 (README_VARIABLES.md)](https://www.google.com/search?q=./README_VARIABLES.md)
+* [変数仕様詳細 (README_VARIABLES.md)](./README_VARIABLES.md)
 
 ### ■ 実装サンプルコード
 
 各フェーズでの変数の読み書き方法や、保護機能がどのように働くかの具体例を掲載しています。
 
-* [実装サンプル集 (README_SAMPLECODE.md)](https://www.google.com/search?q=./README_SAMPLECODE.md)
+* [実装サンプル集 (README_SAMPLECODE.md)](./README_SAMPLECODE.md)
 
 ## 運用上の注意点
 
